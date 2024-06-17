@@ -28,8 +28,8 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+import showcasesTableData from "layouts/tables/data/showcasesTableData";
+import productsTableData from "layouts/tables/data/productsTableData";
 
 import { AgGridReact } from "ag-grid-react"; // React Data Grid Component
 import "ag-grid-community/styles/ag-grid.css"; // Mandatory CSS required by the grid
@@ -160,8 +160,8 @@ function Tables() {
     setIdField(event.target.value)
   }
 
-  const { columns} = authorsTableData();
-  const { columns: pColumns} = projectsTableData();
+  const { columns} = showcasesTableData();
+  const { columns: pColumns} = productsTableData();
 
   const onGridReady = useCallback((params) => {
     
