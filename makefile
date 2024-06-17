@@ -37,8 +37,6 @@ client_start:
 server_start: 
 	@cd ./server && npm run start	
 
-.PHONY: start
-
 
 .PHONY: start_postgres create_db run_sql_script
 
